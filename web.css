@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.input-section input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #FFFF00; /* Yellow background for input boxes */
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background-color: #218838;
+}
+
+.results-section {
+    margin-bottom: 30px;
+}
+
+.results-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; /* Reduced margin to bring titles closer */
+}
+
+.results-section th, .results-section td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.results-section th {
+    background-color: #203764; /* Dark blue background for health type headers */
+    color: white; /* Default white text for headers */
+}
+
+.results-section td {
+    background-color: #D9D9D9; /* Light gray background for answer boxes */
+}
+
+/* Font colors for health type titles */
+.results-section th.great-health {
+    color: #92D050; /* Green for GREAT HEALTH title */
+}
+
+.results-section th.average-health {
+    color: #FFC000; /* Orange for AVERAGE HEALTH title */
+}
+
+.results-section th.bad-health {
+    color: #FF0000; /* Red for BAD HEALTH title */
+}
+
+/* Bold font for results */
+.bold-result {
+    font-weight: bold;
+}
+
+/* Centered section titles with bold italic font */
+.results-section h2 {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 0 10px 0; /* Adjusted margin to bring titles closer */
+}
