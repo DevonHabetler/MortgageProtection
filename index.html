@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Protection Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mortgage Protection Calculator</h1>
+        <!-- Input Fields -->
+        <div class="input-section">
+            <label for="mortgageBalance">Mortgage Balance:</label>
+            <input type="text" id="mortgageBalance" placeholder="Enter mortgage balance" oninput="formatCurrency(this)">
+            <label for="monthlyPayment">Monthly Payment:</label>
+            <input type="text" id="monthlyPayment" placeholder="Enter monthly payment" oninput="formatCurrency(this)">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter age">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+        <!-- Results Section 1: Mortgage Protection -->
+        <div class="results-section">
+            <h2>Mortgage Protection: If Under 70 and No Health Issues</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="great-health">Great Health</th>
+                        <th class="average-health">Average Health</th>
+                        <th class="bad-health">Bad Health</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="greatHealth1" class="bold-result"></td>
+                        <td id="averageHealth1" class="bold-result"></td>
+                        <td id="badHealth1" class="bold-result"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Results Section 2: Mortgage Protection/CBO -->
+        <div class="results-section">
+            <h2>Mortgage Protection/CBO: If 45 Years Old and Under with No Health Issues</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="great-health">Great Health</th>
+                        <th class="average-health">Average Health</th>
+                        <th class="bad-health">Bad Health</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="greatHealth2" class="bold-result"></td>
+                        <td id="averageHealth2" class="bold-result"></td>
+                        <td id="badHealth2" class="bold-result"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Results Section 3: Payment Protection -->
+        <div class="results-section">
+            <h2>Payment Protection: If Over 55 Years Old - Health Issues Are Acceptable</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Duration</th>
+                        <th class="great-health">Great Health</th>
+                        <th class="average-health">Average Health</th>
+                        <th class="bad-health">Bad Health</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 Year</td>
+                        <td id="greatHealth3_1" class="bold-result"></td>
+                        <td id="averageHealth3_1" class="bold-result"></td>
+                        <td id="badHealth3_1" class="bold-result"></td>
+                    </tr>
+                    <tr>
+                        <td>2 Years</td>
+                        <td id="greatHealth3_2" class="bold-result"></td>
+                        <td id="averageHealth3_2" class="bold-result"></td>
+                        <td id="badHealth3_2" class="bold-result"></td>
+                    </tr>
+                    <tr>
+                        <td>3 Years</td>
+                        <td id="greatHealth3_3" class="bold-result"></td>
+                        <td id="averageHealth3_3" class="bold-result"></td>
+                        <td id="badHealth3_3" class="bold-result"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
